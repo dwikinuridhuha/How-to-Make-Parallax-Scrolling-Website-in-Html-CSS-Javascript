@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Paralax Scrolling Website Ramadhan</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo">Rahmadan</a>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</header>
+<section id="scene">
+    <h2 id="text">Ramadan Kareem</h2>
+    <img src="./img/01.png" alt="image-1" id="img1"/>
+    <img src="./img/02.png" alt="image-2" id="img2"/>
+    <img src="./img/03.png" alt="image-3" id="img3"/>
+    <img src="./img/04.png" alt="image-4" id="img4"/>
+</section>
+<div class="sec">
+    <h2>Paralax Scrolling Effect</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Donec et odio pellentesque diam volutpat commodo. Scelerisque fermentum dui faucibus in ornare
+        quam. Ultrices neque ornare aenean euismod elementum nisi quis. Pretium viverra suspendisse potenti nullam ac
+        tortor vitae purus. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Posuere ac ut consequat
+        semper. Diam maecenas sed enim ut sem viverra aliquet eget sit. Ut lectus arcu bibendum at varius vel pharetra
+        vel turpis. Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut.
+        <br/><br/>
+        Sem nulla pharetra diam sit amet nisl suscipit adipiscing. Velit ut tortor pretium viverra suspendisse potenti
+        nullam ac. Tincidunt lobortis feugiat vivamus at. Viverra aliquet eget sit amet tellus cras. Vestibulum rhoncus
+        est pellentesque elit ullamcorper dignissim cras. Cras fermentum odio eu feugiat pretium nibh. Leo duis ut diam
+        quam nulla porttitor massa id. Dictum fusce ut placerat orci nulla pellentesque. Ut faucibus pulvinar elementum
+        integer enim neque volutpat ac tincidunt. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Donec
+        adipiscing tristique risus nec feugiat in fermentum posuere urna. In egestas erat imperdiet sed. Ultrices
+        gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Ac tortor dignissim convallis aenean. Lacus
+        vel facilisis volutpat est velit egestas dui. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+        Tempor commodo ullamcorper a lacus. Feugiat nibh sed pulvinar proin gravida. Nisi est sit amet facilisis magna
+        etiam tempor orci.
+        <br/><br/>
+        Purus semper eget duis at tellus at. In nibh mauris cursus mattis molestie a iaculis at. Sed faucibus turpis in
+        eu. Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Mauris nunc congue nisi vitae
+        suscipit tellus. Pharetra pharetra massa massa ultricies mi quis. Est ante in nibh mauris cursus mattis. Quam
+        nulla porttitor massa id neque aliquam vestibulum. Egestas maecenas pharetra convallis posuere morbi leo. Ac
+        tortor dignissim convallis aenean et tortor. Malesuada fames ac turpis egestas integer eget aliquet nibh
+        praesent.
+        <br/><br/>
+        Felis bibendum ut tristique et egestas. Mattis aliquam faucibus purus in massa. Quam viverra orci sagittis eu
+        volutpat odio facilisis mauris sit. Eu augue ut lectus arcu bibendum at varius vel. Commodo elit at imperdiet
+        dui accumsan sit. Proin gravida hendrerit lectus a. Eget magna fermentum iaculis eu non diam phasellus
+        vestibulum lorem. Urna duis convallis convallis tellus. Felis imperdiet proin fermentum leo vel orci porta. Quam
+        nulla porttitor massa id. Purus non enim praesent elementum facilisis. Pharetra sit amet aliquam id diam.
+        Suspendisse interdum consectetur libero id faucibus nisl tincidunt. Imperdiet proin fermentum leo vel orci porta
+        non. Proin sed libero enim sed faucibus turpis in eu. Natoque penatibus et magnis dis parturient montes
+        nascetur. Quis risus sed vulputate odio ut. Elit ullamcorper dignissim cras tincidunt lobortis.
+    </p>
+</div>
+
+<script>
+    let text = document.getElementById("text");
+    let img1 = document.getElementById("img1");
+    let img2 = document.getElementById("img2");
+    let img3 = document.getElementById("img3");
+
+    window.addEventListener("scroll", () => {
+        let value = window.scrollY;
+        text.style.marginTop = value * -1.5 + "px";
+        img1.style.top = value * 0.75 + "px";
+        img2.style.top = value * 0.5 + "px";
+        img3.style.top = value * 0.25 + "px";
+    })
+</script>
+
+</body>
+</html>
